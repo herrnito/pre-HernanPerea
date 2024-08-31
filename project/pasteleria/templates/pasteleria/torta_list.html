@@ -1,0 +1,17 @@
+{% extends 'pasteleria/base.html' %}
+
+{% block header %}
+Tortas: Registros
+{% endblock header %}
+
+{% block main %}
+    <button>
+        <a href="{% url 'torta_create' %}">Crear Registro</a>
+    </button>
+    {% for object in object_list  %}
+         <p>{{ object.nombre | upper }} ${{ objetct.precio }} </p>
+    {% empty %}
+    <p>No hay registros.</p>
+    {% endfor %}
+{% endblock main %}
+
