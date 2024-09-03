@@ -23,10 +23,10 @@ urlpatterns = [
     path("", views.index, name="index"),
     path("cliente/list/", views.cliente_list, name="cliente_list"),
     path("tortas/list/", views.tortas_list, name="tortas_list"),
-    path("pedido/list/", views.pedido_list, name="pedido_list"),
+    path("pedido/list/", views.pedidos_list, name="pedidos_list"),
     path("cliente/create/", views.cliente_create, name="cliente_create"),
     path("torta/create/", views.torta_create, name="torta_create"),
-    path("pedido/create/", views.pedido_create, name="pedido_create"),
+    path("pedido/create/", views.pedidos_create, name="pedidos_create"),
     
 
 ]

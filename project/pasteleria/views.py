@@ -8,18 +8,18 @@ def index(request):
 
 def cliente_list(request):
     query =  Cliente.objects.all()
-    context = {"objetc_list": query}
+    context = {"object_list": query}
     return render(request, "pasteleria/cliente_list.html", context)
   
 def tortas_list(request):
     query =  Tortas.objects.all()
-    context = {"objetc_list": query}
-    return render(request, "pasteleria/tortas_list.html", context)
+    context = {"object_list": query}
+    return render(request, "pasteleria/torta_list.html", context)
 
-def pedido_list(request):
+def pedidos_list(request):
     query =  Pedido.objects.all()
-    context = {"objetc_list": query}
-    return render(request, "pasteleria/pedido_list.html", context)
+    context = {"object_list": query}
+    return render(request, "pasteleria/pedidos_list.html", context)
 
 def cliente_create(request):
     if request.method == "GET":
@@ -41,13 +41,13 @@ def torta_create(request):
             return redirect("torta_list")
     return render(request, "pasteleria/torta_create.html", {'form': form})
 
-def pedido_create(request):
+def pedidos_create(request):
     if request.method == "GET":
         form = PedidoForm()
     if request.method == "POST":
         form = PedidoForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect("pedido_list")
-    return render(request, "pasteleria/pedido_create.html", {'form': form})
+            return redirect("pedidos_list")
+    return render(request, "pasteleria/pedidos_create.html", {'form': form})
 
