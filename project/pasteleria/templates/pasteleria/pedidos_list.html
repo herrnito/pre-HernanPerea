@@ -13,7 +13,7 @@ Pedidos: Registros
     <p> 
         Servicio: {{ object.servicio | upper}}
         Cliente: {{ object.cliente | upper}}
-        Fecha: {{ object.fecha_entrega date:"d/m/Y" }}
+        Fecha: {{ object.fecha_entrega | date:"d/m/Y"}}
         Estado: {{ object.estado }}
         </p>
     {% empty %}
