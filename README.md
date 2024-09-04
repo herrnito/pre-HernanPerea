@@ -7,7 +7,7 @@
 Clona el repositorio:
 
    git clone https://github.com/herrnito/pre-HernanPerea.git
-   cd pasteleria
+   
   
 Crea y activa un entorno virtual:
 
@@ -16,7 +16,7 @@ Crea y activa un entorno virtual:
    .\env\Scripts\activate  # En Windows
   
 
-Realiza las migraciones iniciales y crea un superusuario:
+Realiza las migraciones y crea un superusuario:
 
    python manage.py makemigrations
    python manage.py migrate
