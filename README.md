@@ -4,7 +4,7 @@
 
 ## ## Instalación
 
-<!-- Clona el repositorio:
+Clona el repositorio:
 
    git clone https://github.com/tuusuario/pasteleria.git
    cd pasteleria
@@ -28,13 +28,14 @@ Ejecuta el servidor:
     python manage.py runserver
   
 
-Accede a la aplicación en tu navegador en `http://127.0.0.1:8000/`  -->
+Accede a la aplicación en tu navegador en `http://127.0.0.1:8000/`
+ 
 
 ## Uso
 
-<!-- Accede a la página principal en `http://127.0.0.1:8000/`.
+Accede a la página principal en `http://127.0.0.1:8000/`.
 Desde ahi, podes:
   Ver la lista de tortas disponibles en `http://127.0.0.1:8000/tortas/`.
   Agregar nuevas tortas en `http://127.0.0.1:8000/torta/create/`.
   Buscar tortas en `http://127.0.0.1:8000/tortas/list/`.
-  Gestionar clientes y pedidos desde las respectivas páginas. -->
+  Gestionar clientes y pedidos desde las respectivas páginas.
