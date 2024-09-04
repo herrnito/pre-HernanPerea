@@ -6,7 +6,7 @@
 
 Clona el repositorio:
 
-   git clone https://github.com/tuusuario/pasteleria.git
+   git clone https://github.com/herrnito/pre-HernanPerea.git
    cd pasteleria
   
 Crea y activa un entorno virtual:
